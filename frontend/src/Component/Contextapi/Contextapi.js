@@ -30,7 +30,7 @@ import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export const Contextdata = createContext();
-const URL = "http://localhost:5000/home";
+const URL = "https://node-blog-ahyt.onrender.com/home";
 
 function Contextapi({children}) {
   const [data, setData] = useState([]);

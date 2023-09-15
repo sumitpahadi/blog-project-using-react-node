@@ -83,7 +83,7 @@ export const Detaildesciption = () => {
 
       <div className="bollywood-data1">
         {bollywooddata
-          .filter((data) => data.id % 2 === 0 && data.id % 3 === 0)
+          .filter((data) => data.id % 2 === 0 && data.id % 8 === 0)
 
           .map((data, index) => {
             if (data.catgory === catgory) {
