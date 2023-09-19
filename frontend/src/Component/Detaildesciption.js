@@ -82,41 +82,39 @@ export const Detaildesciption = () => {
       <hr />
 
       <div className="bollywood-data1">
-        {bollywooddata
-          .filter((data) => data.id % 2 === 0 && data.id % 8 === 0)
+  {bollywooddata
+    .filter((data) => (data.id % 2 === 0 && data.id % 8 === 0) || data.id === 22)
+    .map((data, index) => {
+      if (data.catgory === catgory) {
+        console.log("data id is " + data.id);
+        return (
+          <div className="imagedata" key={index}>
+            <div className="child">
+              <Link to={"/detaildescription/" + data.id + "/" + data.catgory}>
+                <img src={data.Image} alt="click here" />
+              </Link>
+              <div className="title">{data.heading}</div>
+              <div className="description">
+                {truncateDescription(data.description, 20)}
+              </div>
+            </div>
+            <div className="logimage">
+              <div className="mypic">
+                <img src={logo} alt="" />
+              </div>
+              <div className="names">
+                <h5>Written by</h5>
+                <h5>Sumit rawat</h5>
+                <h5>4 August 2023</h5>
+              </div>
+            </div>
+          </div>
+        );
+      }
+      return null;
+    })}
+</div>
 
-          .map((data, index) => {
-            if (data.catgory === catgory) {
-              console.log("data id is " + data.id);
-              return (
-                <div className="imagedata" key={index}>
-                  <div className="child">
-                    <Link
-                      to={"/detaildescription/" + data.id + "/" + data.catgory}
-                    >
-                      <img src={data.Image} alt="click here" />
-                    </Link>
-                    <div className="title">{data.heading}</div>
-                    <div className="description">
-                      {truncateDescription(data.description, 20)}
-                    </div>
-                  </div>
-                  <div className="logimage">
-                    <div className="mypic">
-                      <img src={logo} alt="" />
-                    </div>
-                    <div className="names">
-                      <h5>Written by</h5>
-                      <h5>Sumit rawat</h5>
-                      <h5>4 August 2023</h5>
-                    </div>
-                  </div>
-                </div>
-              );
-            }
-            return null;
-          })}
-      </div>
     </>
   );
 };

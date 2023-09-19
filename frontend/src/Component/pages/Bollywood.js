@@ -90,7 +90,7 @@ export const Bollywood = () => {
           <div className="bollywood-inner-content">
             <div className="post">Top Post</div>
             {apidata
-              .filter((item) => item.id >= 19 && item.id < 23)
+              .filter((item) => item.id >= 19 && item.id <23)
               .map((data, index) => {
                 const count = index + 1;
                 return (
