@@ -1,5 +1,5 @@
 import { Route, Routes } from "react-router-dom";
-
+import "../App.css";
 import Bollywood from "../pages/Bollywood";
 
 import Technology from "../pages/Technology";
@@ -13,22 +13,29 @@ import Fitness from "../pages/Fitness";
 import Food from "../pages/Food";
 
 import Detaildesciption from "../Detaildesciption";
+import Contextapi from "../Contextapi/Contextapi";
+import { Navbar } from "../Navbar";
+import Footer from "../Footer";
 
 function Routercompo() {
   return (
-    <div>
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/bollywood" element={<Bollywood />} />
-        <Route path="/hollywood" element={<Hollywood />} />
-        <Route path="/technology" element={<Technology />} />
-        <Route path="/fitness" element={<Fitness />} />
-        <Route path="/food" element={<Food />} />
-        <Route
-          path="/detaildescription/:id/:catgory"
-          element={<Detaildesciption />}
-        />
-      </Routes>
+    <div className="App">
+      <Navbar></Navbar>
+      <Contextapi>
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/bollywood" element={<Bollywood />} />
+          <Route path="/hollywood" element={<Hollywood />} />
+          <Route path="/technology" element={<Technology />} />
+          <Route path="/fitness" element={<Fitness />} />
+          <Route path="/food" element={<Food />} />
+          <Route
+            path="/detaildescription/:id/:catgory"
+            element={<Detaildesciption />}
+          />
+        </Routes>
+      </Contextapi>
+      <Footer></Footer>
     </div>
   );
 }
