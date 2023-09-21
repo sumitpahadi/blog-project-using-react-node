@@ -1,6 +1,7 @@
 import { lazy, Suspense } from "react";
 
-const Lazyloading = lazy(() => import("./Component/Routes/Routercompo"));
+import Routercompo from "./Component/Routes/Routercompo";
+const Lazyloading = lazy(() => import("./Component/Contextapi/Contextapi"));
 
 function App() {
   return (
@@ -21,6 +22,8 @@ function App() {
       >
         <Lazyloading />
       </Suspense>
+      <Routercompo></Routercompo>
+
     </div>
   );
 }
