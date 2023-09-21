@@ -5,7 +5,7 @@ import axios from "axios";
 export const Contextdata = createContext();
 const url = "https://node-blog-ahyt.onrender.com/home";
 
-function Contextapi({apidata}) {
+function Contextapi({children}) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
@@ -16,7 +16,7 @@ function Contextapi({apidata}) {
 
   return (
     <Contextdata.Provider value={data}>
-      {apidata}
+      {children}
     </Contextdata.Provider>
   );
 }
