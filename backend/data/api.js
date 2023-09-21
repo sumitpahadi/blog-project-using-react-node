@@ -152,7 +152,7 @@ const api = [
     description:
       "Bhoot Police is a horror-comedy Bollywood film directed by Pavan Kirpalani. The movie stars Saif Ali Khan, Arjun Kapoor, Jacqueline Fernandez, and Yami Gautam in lead roles. The story revolves around two ghost-hunting brothers, Vibhooti and Chiraunji, who are known for scamming people with their fake ghost encounters. However, their lives take a turn when they encounter real paranormal activities at a haunted mansion. As they delve deeper into the mystery, they team up with a mysterious woman, Kanika, and a local police officer, Rudra, to unravel the truth behind the spooky occurrences. Bhoot Police promises a thrilling and humorous ride, combining scares and laughs to create an entertaining cinematic experience for the audience.",
   },
-  
+
   {
     id: 17,
     Image:
@@ -1278,7 +1278,6 @@ const api = [
     description:
       "Space technology refers to the range of advanced tools, vehicles, and systems used for space exploration, research, and satellite communication. It encompasses spacecraft, satellites, space probes, telescopes, and rovers, among other cutting-edge equipment. Space technology enables humanity to study celestial bodies, understand the cosmos, and improve communication and navigation on Earth.Spacecraft are designed for travel and operation in space, both crewed and uncrewed. Satellites orbit Earth and other celestial bodies, providing critical data for communication, weather monitoring, and Earth observation. Space probes venture to distant planets and moons, uncovering secrets of our solar system. Rovers traverse planetary surfaces, conducting scientific experiments and data collection.",
   },
-  
 ];
 
 module.exports = api;

@@ -3,20 +3,20 @@ import React, { createContext, useEffect, useState } from "react";
 import axios from "axios";
 
 export const Contextdata = createContext();
-const URL = "https://node-blog-ahyt.onrender.com/home";
+const url = "https://node-blog-ahyt.onrender.com/home";
 
-function Contextapi({children}) {
+function Contextapi({apidata}) {
   const [data, setData] = useState([]);
 
   useEffect(() => {
-    axios.get(URL)
+    axios.get(url)
       .then((response) => setData(response.data))
       .catch((error) => console.log(error));
   }, []);
 
   return (
     <Contextdata.Provider value={data}>
-      {children}
+      {apidata}
     </Contextdata.Provider>
   );
 }
