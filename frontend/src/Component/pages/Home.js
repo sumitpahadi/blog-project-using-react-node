@@ -68,7 +68,7 @@ console.log(apidata)
         <div className="bollywood-firstinner-container">
           <div className="bollywood-content">
             {apidata
-              .filter((item) => item.id >= 122 && item.id < 132)
+              .filter((item) => item.id >= 122 && item.id < 131)
               .map((data, index) => {
                 return (
                   <div key={index}>
@@ -90,13 +90,7 @@ console.log(apidata)
                   </div>
                 );
               })}
-            <div className="load">
-              {" "}
-              <span className="material-symbols-outlined">
-                keyboard_double_arrow_down
-              </span>
-              LOAD MORE{" "}
-            </div>
+          
           </div>
         </div>
 
@@ -120,7 +114,7 @@ console.log(apidata)
                       <div className="title">{data.heading}</div>
 
                       <div className="description">
-                        {truncateDescription(data.description, 8)}
+                        {truncateDescription(data.description, 15)}
                       </div>
                       <div className="count">{count}</div>
                     </div>

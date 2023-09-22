@@ -54,7 +54,7 @@ export const Fitness = () => {
         <div className="bollywood-firstinner-container">
           <div className="bollywood-content">
             {apidata
-              .filter((item) => item.id >= 78 && item.id <87)
+              .filter((item) => item.id >= 78 && item.id <86)
               .map((data, index) => {
                 return (
                   <div key={index}>
@@ -72,13 +72,7 @@ export const Fitness = () => {
                   </div>
                 );
               })}
-            <div className="load">
-              {" "}
-              <span className="material-symbols-outlined">
-                keyboard_double_arrow_down
-              </span>
-              LOAD MORE{" "}
-            </div>
+        
           </div>
         </div>
 

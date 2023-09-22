@@ -62,23 +62,17 @@ export const Food = () => {
                       <Link to={"/detaildescription/" + data.id+"/"+data.catgory}>
                         <img src={data.Image} alt="click here" />
                       </Link>
-                      <div className="title">{data.heading}</div>
+                      <div className="title">{truncateDescription(data.heading,5)}...</div>
 
                       <div className="description">
-                        {truncateDescription(data.description, 0)}
+                        {truncateDescription(data.description, 15)}
                       </div>
                     </div>
                     <hr />
                   </>
                 );
               })}
-            <div className="load">
-              {" "}
-              <span className="material-symbols-outlined">
-                keyboard_double_arrow_down
-              </span>
-              LOAD MORE{" "}
-            </div>
+          
           </div>
         </div>
         <div className="bollywood-secondinner-container">
@@ -94,10 +88,10 @@ export const Food = () => {
                       <Link to={"/detaildescription/" + data.id+"/"+data.catgory}>
                         <img src={data.Image} alt="click here" />
                       </Link>
-                      <div className="title">{data.heading}</div>
+                      <div className="title">{truncateDescription(data.heading,5)}...</div>
 
                       <div className="description">
-                        {truncateDescription(data.description, 0)}
+                        {truncateDescription(data.description, 15)}
                       </div>
                       <div className="count">{count}</div>
                     </div>

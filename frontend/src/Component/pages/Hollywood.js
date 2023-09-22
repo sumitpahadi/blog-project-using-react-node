@@ -71,13 +71,7 @@ export const Hollywood = () => {
                   </>
                 );
               })}
-            <div className="load">
-              {" "}
-              <span className="material-symbols-outlined">
-                keyboard_double_arrow_down
-              </span>
-              LOAD MORE{" "}
-            </div>
+           
           </div>
         </div>
 

@@ -54,7 +54,7 @@ export const Bollywood = () => {
         <div className="bollywood-firstinner-container">
           <div className="bollywood-content">
             {apidata
-              .filter((item) => item.id >= 10 && item.id < 19)
+              .filter((item) => item.id >= 10 && item.id < 17)
               .map((data, index) => {
                 return (
                   <div key={index}>
@@ -76,13 +76,7 @@ export const Bollywood = () => {
                   </div>
                 );
               })}
-            <div className="load">
-              {" "}
-              <span className="material-symbols-outlined">
-                keyboard_double_arrow_down
-              </span>
-              LOAD MORE{" "}
-            </div>
+         
           </div>
         </div>
 
