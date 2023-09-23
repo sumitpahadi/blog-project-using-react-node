@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { NavLink } from "react-router-dom";
 import "./Navbar.css";
+import { Link } from "react-router-dom";
 
 export const Navbar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -17,15 +18,27 @@ export const Navbar = () => {
 
   return (
     <>
+
+<style>
+        {`
+          a {
+            text-decoration: none;
+          }
+        `}
+      </style>
+    <Link to={"/"}>
       <div className="heading">
         <div className="inline1 inline">The</div>
         <div className="inline2 inline">Siren</div>
       </div>
+    </Link>
       <nav>
+        <Link to={"/"}>
         <div className="heading1">
           <div className="inline1 inline">The</div>
           <div className="inline2 inline">Siren</div>
         </div>
+        </Link>
 
         <div className="menu" onClick={toggleMenu}>
           <span></span>
