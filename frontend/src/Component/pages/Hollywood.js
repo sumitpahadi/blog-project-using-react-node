@@ -53,7 +53,7 @@ export const Hollywood = () => {
         <div className="bollywood-firstinner-container">
           <div className="bollywood-content">
             {apidata
-              .filter((item) => item.id >= 54 && item.id < 63)
+              .filter((item) => item.id >= 54 && item.id < 64)
               .map((data, index) => {
                 return (
                   <>

@@ -54,7 +54,7 @@ export const Fitness = () => {
         <div className="bollywood-firstinner-container">
           <div className="bollywood-content">
             {apidata
-              .filter((item) => item.id >= 78 && item.id <86)
+              .filter((item) => item.id >= 78 && item.id <87)
               .map((data, index) => {
                 return (
                   <div key={index}>
@@ -80,7 +80,7 @@ export const Fitness = () => {
           <div className="bollywood-inner-content">
             <div className="post">Top Post</div>
             {apidata
-              .filter((item) => item.id >= 87 && item.id <=91)
+              .filter((item) => item.id >= 86 && item.id <=91)
               .map((data, index) => {
                 const count = index + 1;
                 return (

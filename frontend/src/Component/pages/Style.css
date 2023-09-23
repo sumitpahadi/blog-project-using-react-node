@@ -213,7 +213,7 @@ padding-left: 100px;
 
 } */
 .bollywood-content .child{
-  height: 219px;
+  height: 237px;
   max-width: 800px;
   min-width: 500px;
 
@@ -329,7 +329,7 @@ padding-left: 100px;
 
 
 
-@media screen and (min-width:620px) and (max-width:1027px){
+@media screen and (min-width:620px) and (max-width:1171px){
   .top-container {
     display: grid;
     margin-top: 40px;
@@ -351,6 +351,19 @@ padding-left: 100px;
 .third-container img{
   height: 150px;
   width: 100%;
+}
+
+
+.bollywood-first-container{
+  display: flex;
+  flex-wrap: wrap;
+ justify-content: flex-start;
+ padding: 80px;
+ 
+}
+
+.advertisement{
+  display: none;
 }
 
 
