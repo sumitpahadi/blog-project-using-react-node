@@ -80,6 +80,7 @@ export const Detaildesciption = () => {
         <h1>More from The Siren</h1>
       </div>
       <hr />
+    
 
       <div className="bollywood-data1">
   {bollywooddata
