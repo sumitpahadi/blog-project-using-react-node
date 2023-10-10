@@ -20,8 +20,8 @@ import Footer from "../Footer";
 function Routercompo() {
   return (
     <div className="App">
-      <Navbar></Navbar>
       <Contextapi>
+      <Navbar></Navbar>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/bollywood" element={<Bollywood />} />
@@ -34,8 +34,8 @@ function Routercompo() {
             element={<Detaildesciption />}
           />
         </Routes>
-      </Contextapi>
       <Footer></Footer>
+      </Contextapi>
     </div>
   );
 }
